@@ -1,2 +1,2 @@
 # ocr.cs
-OCR with C#.
+OCR with C# (Console App).
