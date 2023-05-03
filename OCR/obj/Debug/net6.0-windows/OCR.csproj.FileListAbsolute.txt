@@ -16,3 +16,9 @@ Z:\0 DontSync\GitHub\ocr.cs\OCR\obj\Debug\net6.0-windows\refint\OCR.dll
 Z:\0 DontSync\GitHub\ocr.cs\OCR\obj\Debug\net6.0-windows\OCR.pdb
 Z:\0 DontSync\GitHub\ocr.cs\OCR\obj\Debug\net6.0-windows\OCR.genruntimeconfig.cache
 Z:\0 DontSync\GitHub\ocr.cs\OCR\obj\Debug\net6.0-windows\ref\OCR.dll
+Z:\0 DontSync\GitHub\ocr.cs\OCR\bin\Debug\net6.0-windows\x86\leptonica-1.82.0.dll
+Z:\0 DontSync\GitHub\ocr.cs\OCR\bin\Debug\net6.0-windows\x86\tesseract50.dll
+Z:\0 DontSync\GitHub\ocr.cs\OCR\bin\Debug\net6.0-windows\x64\leptonica-1.82.0.dll
+Z:\0 DontSync\GitHub\ocr.cs\OCR\bin\Debug\net6.0-windows\x64\tesseract50.dll
+Z:\0 DontSync\GitHub\ocr.cs\OCR\bin\Debug\net6.0-windows\Tesseract.dll
+Z:\0 DontSync\GitHub\ocr.cs\OCR\obj\Debug\net6.0-windows\OCR.csproj.CopyComplete
