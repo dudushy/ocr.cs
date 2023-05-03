@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "vnmtv1c/9g0zBguyCrczZ6s6oe+YXj8Md+xndbcssbT5yHdKP093dgkkx9fJ+nrJZQGE/6azRZ+c5O+QdTGa9w==",
+  "dgSpecHash": "YAyuG8lDPCzPt1wtT7uwjw1l6voNoC/+iD8qZ0FiowKVr9in/Cx4vlegP2y0RTszzscaPE4VxqL0WpXj5PXutw==",
   "success": true,
   "projectFilePath": "Z:\\0 DontSync\\GitHub\\ocr.cs\\OCR\\OCR.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\User\\.nuget\\packages\\system.reflection.emit\\4.7.0\\system.reflection.emit.4.7.0.nupkg.sha512",
+    "C:\\Users\\User\\.nuget\\packages\\tesseract\\5.2.0\\tesseract.5.2.0.nupkg.sha512"
+  ],
   "logs": []
 }
