@@ -52,12 +52,17 @@ namespace OCR
 
             try
             {
+                System.Diagnostics.Debug.WriteLine($"[{TITLE}#buttonRun_Click] using engine");
                 using (var engine = new TesseractEngine(@"tessdata", "eng", EngineMode.Default))
                 {
+                    System.Diagnostics.Debug.WriteLine($"[{TITLE}#buttonRun_Click] using img");
                     using (var img = Pix.LoadFromFile(this.imagePath))
                     {
+                        System.Diagnostics.Debug.WriteLine($"[{TITLE}#buttonRun_Click] using page");
                         using (var page = engine.Process(img))
                         {
+                            System.Diagnostics.Debug.WriteLine($"[{TITLE}#buttonRun_Click] engine.Process(img))");
+
                             var text = page.GetText();
                             System.Diagnostics.Debug.WriteLine($"[{TITLE}#buttonRun_Click] text: " + text);
 
