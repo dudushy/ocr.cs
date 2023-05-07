@@ -1,4 +1,4 @@
-using Tesseract;
+using IronOcr;
 
 namespace OCR
 {
@@ -50,33 +50,16 @@ namespace OCR
 
             System.Diagnostics.Debug.WriteLine($"[{TITLE}#buttonRun_Click] imagePath: " + this.imagePath);
 
-            try
+            var ocr = new IronTesseract();
+            using (var input = new OcrInput(@"" + this.imagePath))
             {
-                System.Diagnostics.Debug.WriteLine($"[{TITLE}#buttonRun_Click] using engine");
-                using (var engine = new TesseractEngine(@"tessdata", "eng", EngineMode.Default))
-                {
-                    System.Diagnostics.Debug.WriteLine($"[{TITLE}#buttonRun_Click] using img");
-                    using (var img = Pix.LoadFromFile(this.imagePath))
-                    {
-                        System.Diagnostics.Debug.WriteLine($"[{TITLE}#buttonRun_Click] using page");
-                        using (var page = engine.Process(img))
-                        {
-                            System.Diagnostics.Debug.WriteLine($"[{TITLE}#buttonRun_Click] engine.Process(img))");
+                System.Diagnostics.Debug.WriteLine($"[{TITLE}#buttonRun_Click] input: " + input);
 
-                            var text = page.GetText();
-                            System.Diagnostics.Debug.WriteLine($"[{TITLE}#buttonRun_Click] text: " + text);
+                var result = ocr.Read(input);
+                System.Diagnostics.Debug.WriteLine($"[{TITLE}#buttonRun_Click] result: " + result);
+                System.Diagnostics.Debug.WriteLine($"[{TITLE}#buttonRun_Click] result.Text: " + result.Text);
 
-                            var precisionRate = page.GetMeanConfidence();
-                            System.Diagnostics.Debug.WriteLine($"[{TITLE}#buttonRun_Click] precisionRate: " + precisionRate);
-
-                            this.textBoxOutput.Text = text;
-                        }
-                    }
-                }
-            }
-            catch (Exception ex)
-            {
-                System.Diagnostics.Debug.WriteLine($"[{TITLE}#buttonRun_Click] Exception: " + ex.Message);
+                this.textBoxOutput.Text = result.Text;
             }
 
             System.Diagnostics.Debug.WriteLine($"[{TITLE}#buttonRun_Click] --STOP");
