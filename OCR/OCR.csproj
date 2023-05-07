@@ -9,7 +9,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Tesseract" Version="3.0.2" />
+    <PackageReference Include="IronOcr" Version="2022.3.0" />
   </ItemGroup>
 
   <ItemGroup>
